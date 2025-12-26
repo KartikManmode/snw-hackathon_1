@@ -1,0 +1,137 @@
+
+body{
+    margin: 0;
+    background-color: black;
+}
+nav{
+    top:0px;
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: 6vh;
+    gap: 2vw;
+    
+    /* background-color: rgba(74, 74, 74, 0.789); */
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    height: 8vh;
+    border-bottom-left-radius:2vw ;
+    border-bottom-right-radius:2vw ;
+            background: rgba(0, 0, 0, 0.55); /* glass black */
+    backdrop-filter: blur(6px);
+}
+.logo{
+    margin-left: 1vw;
+    align-content: center;
+    grid-column: 1/4;
+
+}
+.logo img{
+    width:7vw;
+
+}
+
+.opts{
+    margin-top: 1vh;
+    align-content: center;
+    font-size: 1.3vw;
+    text-align: center;
+    border-radius: 1vw;
+    color: white;
+    transition: 0.5s ease;
+}
+.opts:hover{
+    background-color: white;
+    
+    color: black;
+}
+#Home{
+    grid-column: 4/6;
+}
+#Movies{
+    grid-column: 6/8;
+}
+#tv{
+    grid-column: 8/10;
+}
+#live{
+    grid-column: 10/12;
+}
+
+
+
+.slide{
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(2,40vw);
+
+
+    width: 100vw;
+    height: 60vh;
+    color: white;
+}
+.content{
+    position: relative;
+    width: 40vw;
+    height: 100%;
+    align-content: center;
+    justify-items: center;
+}
+.pic{
+    width: 60vw;
+    height: 100%;
+    
+}
+
+.pic img{
+    width: 100%;
+}
+button{
+    position: absolute;
+
+}
+.left{
+    top: 30vh;
+    z-index: 10;
+    left: 1vw;
+}
+.right{
+    top: 30vh;
+    left: 97vw;
+    z-index: 10;
+}
+.movie_list{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(1,0.5fr);
+    /* grid-template-columns: minmax(5vw,100vw);*/
+    grid-auto-columns: minmax(250px,600px); 
+    scrollbar-width: none;
+    overflow-x: auto;
+    gap: 1vw;
+    
+}
+.movie_list li{
+    
+    text-decoration: none;
+}
+.movie_li img{
+    border-radius: 1vw;
+    width: 100%;
+}
+
+@media screen and (max-width:850px) {
+    .slide{
+        height: 30vh;
+        font-size: 10px;
+    }
+    .h1{
+        font-size: 10px;
+    }
+    
+}
+.k{
+    color: white;
+    margin-left: 3vw;
+}
