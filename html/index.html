@@ -20,8 +20,8 @@
     </nav>
 
     <div class="vids">
-        <button class="left" onclick="next(-1)">|---</button>
-        <button class="right" onclick="next(1)">---|</button>
+        <button class="left" onclick="next(-1)">&#10096;</button>
+        <button class="right" onclick="next(+1)">&#10095;</button>
         <div class="slide" id="naruto">
             <div class="content" >
                 <h1>Naruto</h1>
@@ -104,8 +104,8 @@
             <img src="../src/housefull5_poster.jpg">
 
         </li>
-
     </ul>
+    <h1 class="k">Popular action movies</h1>
     <ul class="movie_list">
         <li class="movie_li">
             <img src="../src/housefull5_poster.jpg">
@@ -152,7 +152,8 @@
         </li>
 
     </ul>
-
+    
+    <h1 class="k">Popular action movies</h1>
     <ul class="movie_list">
         <li class="movie_li">
             <img src="../src/housefull5_poster.jpg">
@@ -199,7 +200,7 @@
         </li>
 
     </ul>
-
+    <h1 class="k">Popular action movies</h1>
     <ul class="movie_list">
         <li class="movie_li">
             <img src="../src/housefull5_poster.jpg">
@@ -256,7 +257,9 @@
 
 
         function next(n){
+            console.log(ind)
             show(ind+=n);
+
         }
 
         function show(n){

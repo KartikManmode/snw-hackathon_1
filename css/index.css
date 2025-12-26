@@ -18,6 +18,8 @@ nav{
     height: 8vh;
     border-bottom-left-radius:2vw ;
     border-bottom-right-radius:2vw ;
+            background: rgba(0, 0, 0, 0.55); /* glass black */
+    backdrop-filter: blur(6px);
 }
 .logo{
     margin-left: 1vw;
@@ -35,11 +37,13 @@ nav{
     align-content: center;
     font-size: 1.3vw;
     text-align: center;
+    border-radius: 1vw;
     color: white;
+    transition: 0.5s ease;
 }
 .opts:hover{
     background-color: white;
-    border-radius: 1vw;
+    
     color: black;
 }
 #Home{
@@ -58,7 +62,7 @@ nav{
 
 
 .slide{
-    margin-top: 5vh;
+    margin-top: 10vh;
     display: grid;
     grid-template-columns: repeat(2,40vw);
 
@@ -84,15 +88,18 @@ nav{
     width: 100%;
 }
 button{
-    position: fixed;
+    position: absolute;
 
 }
 .left{
     top: 30vh;
+    z-index: 10;
+    left: 1vw;
 }
 .right{
     top: 30vh;
     left: 97vw;
+    z-index: 10;
 }
 .movie_list{
     display: grid;
